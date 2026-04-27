@@ -1,15 +1,16 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import java.util.Scanner;
+// Жолдас Қайсар ИС 24-22
 
-public class MainTest {
+public class Labwork15 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    @Test
-    void testSum() {
-        assertEquals(5, Main.sum(2, 3));
-    }
+        System.out.print("Введите строку: ");
+        String input = scanner.nextLine();
 
-    @Test
-    void testNegative() {
-        assertEquals(-1, Main.sum(2, -3));
+        String upper = input.toUpperCase();
+
+        System.out.println("Результат: " + upper);
+        scanner.close();
     }
 }
